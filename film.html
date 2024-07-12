@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Institute Technologi & Business</title>
+    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="css/table.css">
+    <script src="java/script.js" defer></script>
+</head>
+<style>
+   .flex-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .text-content {
+        order: 2;
+        flex: 1;
+    }
+
+    .image-content {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .image-content img {
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .general-ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .general-ul li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 20px;
+        counter-increment: list-counter;
+    }
+
+    .general-ul li::before {
+        content: counter(list-counter) ". "; 
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+</style>
+<body>
+    <header>        
+        <h1>Institut Teknologi Dan Bisnis Bina Sarana Global</h1>
+    </header>
+    <div>
+        <nav>
+            <a href="home.html">home</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">fakultas</a>
+                <div class="dropdown-menu">
+                    <a href="TI.html">Information Engineering</a>
+                    <a href="SI.html">Information System</a>
+                    <a href="film.html">Film, Television & Media Studies</a>
+                </div>
+            </div>
+            <a href="akademik.html">Akademik</a>
+            <a href="organisasi.html">organisasi</a>
+            <a href="prestasi.html">prestasi</a>
+            <a href="gambar2.html">galeri</a>
+        </nav>
+        <div class="judul">
+            <h2>Film, Television & Media Studies</h2>
+        </div>
+    </div>
+    <div class="container">
+        <section id="about" class="flex-container">
+            <div class="text-content">
+                <h3>Visi</h3>
+                <p>Menjadi program studi unggulan dalam bidang Film, Televisi, dan Media yang menghasilkan lulusan kreatif, kritis, 
+                    dan profesional, serta mampu berkontribusi secara signifikan dalam industri media dan budaya global.</p>
+                <h3>Misi</h3>
+                <ul class="general-ul">
+                    <li><strong>Pengembangan Kreativitas:</strong> <br>
+                        Mendorong pengembangan kreativitas dan ekspresi artistik mahasiswa melalui berbagai 
+                        proyek, produksi, dan kegiatan praktis di bidang film, televisi, dan media.
+                    </li>
+                    <li><strong>Pengembangan Profesionalisme:</strong> <br>
+                        Mengembangkan keterampilan profesionalisme dan etika kerja mahasiswa agar siap 
+                        menghadapi tantangan di dunia industri film, televisi, dan media.
+                    </li>
+                    <li><strong>Penelitian dan Inovasi:</strong> <br>
+                        Mendukung penelitian dan inovasi yang relevan dengan industri media, serta 
+                        mempublikasikan hasil penelitian di tingkat nasional dan internasional untuk berkontribusi 
+                        pada pengembangan ilmu dan praktik di bidang ini.
+                    </li>
+                    <li><strong>Kerjasama dan Jejaring:</strong> <br>
+                        Membangun dan memperluas jaringan kerjasama dengan industri, komunitas kreatif, dan institusi 
+                        pendidikan lainnya baik di dalam maupun luar negeri untuk meningkatkan kualitas pendidikan dan 
+                        peluang karir mahasiswa.
+                    </li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="gambar/gambar-film.jpg" alt="Deskripsi gambar">
+                <img src="gambar/gambar-film2.jpg" alt="film">
+            </div>
+        </section>
+        <section id="programs">
+            <h2>Pilihan Kosentrasi</h2>
+            
+                <h3>Visual Media Communication (VMC)</h3>
+                <p>
+                    Program Studi Kajian Film, Televisi dan Media (KFTM) mempelajari berbagai aspek film, televisi, dan media secara teoritis dan praktis. Mahasiswa 
+                    akan mempelajari sejarah, estetika, produksi, dan distribusi film dan televisi, serta berbagai aspek media lainnya seperti media sosial, media massa, 
+                    dan media digital. Lulusan KFTM diharapkan memiliki pengetahuan dan keterampilan yang luas mengenai film, televisi, dan media, serta mampu bekerja 
+                    secara profesional di industri kreatif, media, dan komunikasi. Selain itu, lulusan KFTM juga diharapkan memiliki kemampuan berpikir kritis dan 
+                    analitis dalam menganalisis dan mengkaji film, televisi, dan media.
+                </p>
+                <h3>Public Relation & Digital Communication (PRDC)</h3>
+                <p>
+                    Konsentrasi Public Relation & Digital Communication (PRDC) berfokus pada strategi komunikasi dan penggunaan media digital dalam membangun dan memelihara 
+                    hubungan dengan publik. Mahasiswa akan mempelajari berbagai teori dan praktik public relations, media sosial, dan komunikasi digital. Lulusan PRDC 
+                    diharapkan memiliki kemampuan untuk menyusun strategi komunikasi yang efektif, menggunakan media digital untuk membangun dan memelihara hubungan dengan 
+                    publik, menganalisis dan mengukur efektivitas program komunikasi, memahami dan mengikuti perkembangan teknologi komunikasi digital.
+                </p>
+        </section>
+    </div>
+    <div class="container">
+        <h2>potensi karir</h2>
+        <table border="1">
+            <tr>
+                <th>VMC</th>
+                <th>PRDC</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="table-ul">
+                        <li>Desainer grafis</li>
+                        <li>Animator</li>
+                        <li>Video editor</li>
+                        <li>Content Creator</li>
+                        <li>Motion graphic artist</li>
+                        <li>Visual effects artist</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="table-ul">
+                        <li>Public relations officer</li>
+                        <li>Social media specialist</li>
+                        <li>Digital marketing specialist</li>
+                        <li>Content strategist</li>
+                        <li>Communication consultant</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <section class="contact">
+            <h2>Kontak</h2>
+            <p>Alamat: Jl. Aria Santika No.43, Margasari, Kec. Karawaci, Kota Tangerang, Banten 15113</p>
+            <p>Email: kampus@global.ac.id</p>
+            <p>Telepon: (021) 5522727</p>
+        </section>
+        <footer>
+            <p>&copy;2024 Global Institute, Inc. All right reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

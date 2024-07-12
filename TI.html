@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Institute Technologi & Business</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="java/script.js" defer></script>
+</head>
+<style>
+    .flex-container {
+         display: flex;
+         align-items: center;
+     }
+ 
+     .text-content {
+         order: 2;
+         flex: 1;
+     }
+ 
+     .image-content {
+         order: 1;
+         display: flex;
+         flex-direction: column;
+         margin-right: 20px;
+     }
+ 
+     .image-content img {
+         max-width: 300px;
+         height: auto;
+         margin-bottom: 5px;
+     }
+ 
+     .general-ul {
+         padding: 0;
+         list-style-type: none;
+     }
+ 
+     .general-ul li {
+         margin-bottom: 15px;
+         position: relative;
+         padding-left: 20px;
+         counter-increment: list-counter;
+     }
+ 
+     .general-ul li::before {
+         content: counter(list-counter) ". "; 
+         position: absolute;
+         left: 0;
+         top: 0;
+     }
+ </style>
+</head>
+<body>
+</style>
+<body>
+    <header>    
+        <h1>Institut Teknologi Dan Bisnis Bina Sarana Global</h1>
+    </header>
+    <div>
+        <nav>
+            <a href="home.html">home</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">fakultas</a>
+                <div class="dropdown-menu">
+                    <a href="TI.html">Information Engineering</a>
+                    <a href="SI.html">Information System</a>
+                    <a href="film.html">Film, Television & Media Studies</a>
+                </div>
+            </div>
+            <a href="akademik.html">Akademik</a>
+            <a href="organisasi.html">organisasi</a>
+            <a href="prestasi.html">prestasi</a>
+            <a href="gambar2.html">galeri</a>
+        </nav>
+        <div class="judul">
+            <h2>Information Engineering</h2>
+        </div> 
+    </div>
+    <div class="container">
+        <section id="about"class="flex-container">
+            <div class="text-content">
+                <h3>Visi</h3>
+                <p>Menjadi program studi unggulan dalam bidang Teknik Informatika yang berorientasi pada inovasi, keunggulan akademik, 
+                dan kontribusi terhadap pengembangan teknologi informasi global.</p>
+                <h3>misi</h3>
+                <ul class="general-ul">
+                    <li><strong>Memberikan Pendidikan Berkualitas Tinggi:</strong> <br>
+                        Menyelenggarakan pendidikan Teknik Informatika yang berkualitas 
+                        tinggi dengan kurikulum yang relevan dan mutakhir sesuai dengan perkembangan 
+                        teknologi informasi.
+                    </li>
+                    <li><strong>Mendorong Penelitian dan Inovasi:</strong> <br>
+                        Mengembangkan lingkungan akademik yang mendukung penelitian dan inovasi di bidang 
+                        Teknik Informatika untuk menciptakan solusi-solusi teknologi yang baru dan bermanfaat.
+                    </li>
+                    <li><strong>Memfasilitasi Pengembangan Profesional:</strong> <br>
+                        Menyediakan sarana dan prasarana yang memadai serta program pengembangan diri 
+                        untuk mahasiswa guna meningkatkan keterampilan teknis dan kepemimpinan mereka.
+                    </li>
+                    <li><strong>Menghasilkan Lulusan yang Kompeten dan Beretika:</strong> <br>
+                        Menghasilkan lulusan Teknik Informatika yang profesional, kompeten, dan memiliki 
+                        integritas tinggi dalam menghadapi tantangan dunia kerja global.
+                    </li>
+                </ul>
+            </div>          
+            <div class="image-content">
+                <img src="gambar/gambar-TI1.webp" alt="Deskripsi gambar">
+                <img src="gambar/gambar-TI2.webp" alt="film">
+            </div>
+        </section>
+        <section id="programs">
+            <h2>Pilihan Konsentrasi</h2>
+            
+                <h3>Software Engineering</h3>
+                    <p>
+                    Konsentrasi software engineering atau rekayasa perangkat lunak adalah sebuah disiplin ilmu yang berkaitan dengan pengembangan, perancangan, dan pembuatan perangkat lunak atau software.
+                    Bidang ini meliputi seluruh tahapan dalam siklus pengembangan perangkat lunak, mulai dari analisis kebutuhan, 
+                    perancangan arsitektur, implementasi kode, pengujian, hingga pemeliharaan atau perbaikan perangkat lunak. 
+                    Seorang software engineer atau insinyur perangkat lunak bertanggung jawab untuk membuat perangkat lunak yang aman, 
+                    handal, efisien, mudah dimengerti, dan dapat diandalkan oleh pengguna. Mereka menggunakan metode, teknologi, dan 
+                    alat yang tepat untuk membangun perangkat lunak yang sesuai dengan spesifikasi dan persyaratan klien atau pengguna. 
+                    Konsentrasi software engineering juga meliputi konsep-konsep seperti manajemen proyek perangkat lunak, pengembangan 
+                    perangkat lunak berbasis web, pengembangan aplikasi mobile, pengujian perangkat lunak, keamanan perangkat lunak, dan 
+                    pengembangan aplikasi terdistribusi. Semua aspek ini penting dalam pengembangan perangkat lunak yang berkualitas tinggi 
+                    dan dapat dipercaya oleh pengguna.
+                    
+                    </p>
+                <h3>Internet of Things</h3>
+                <p>
+                    Konsentrasi Internet of Things (IoT) dan Networking adalah dua bidang teknologi 
+                    yang saling terkait dan memainkan peran penting dalam menghubungkan perangkat dan sistem dalam lingkungan digital yang semakin 
+                    terkoneksi. Internet of Things (IoT) adalah konsep di mana berbagai perangkat yang terhubung ke internet, seperti sensor, kamera, 
+                    alat kesehatan, kendaraan, dan peralatan rumah tangga, dapat saling berkomunikasi dan bertukar data untuk menghasilkan informasi 
+                    yang berguna. IoT memungkinkan pengumpulan data secara real-time, analisis data yang lebih akurat, dan pengambilan keputusan yang 
+                    lebih baik. Para ahli di bidang IoT bekerja pada pengembangan perangkat keras dan perangkat lunak, teknologi jaringan, keamanan, 
+                    dan manajemen data yang diperlukan untuk mengimplementasikan solusi IoT. Sementara itu, bidang Networking fokus pada pengembangan, 
+                    manajemen, dan pengoperasian jaringan komputer. Para ahli di bidang Networking mempelajari bagaimana membangun, mengkonfigurasi, 
+                    dan mengoptimalkan jaringan komputer, termasuk teknologi seperti protokol jaringan, infrastruktur jaringan, keamanan jaringan, dan 
+                    manajemen jaringan. Networking menjadi semakin penting dengan semakin banyaknya perangkat dan sistem yang terhubung ke internet 
+                    dan memerlukan akses jaringan yang andal dan aman. Dalam praktiknya, para ahli di bidang IoT dan Networking sering bekerja sama 
+                    untuk mengembangkan solusi teknologi yang terintegrasi dan terkoneksi. Kombinasi keahlian di kedua bidang ini diperlukan untuk 
+                    mengembangkan solusi IoT yang aman, efisien, dan dapat diandalkan, serta memastikan jaringan yang mendukungnya berjalan dengan 
+                    lancar dan dapat diakses dengan mudah.
+                </p>
+                <h3>Computerized Design & Multimedia</h3>
+                <p>
+                    Konsentrasi Computerized and Multimedia adalah bidang teknologi yang berkaitan dengan 
+                    pengembangan dan penggunaan teknologi komputer untuk menghasilkan konten multimedia yang interaktif dan menarik. Konsentrasi ini 
+                    mencakup berbagai disiplin ilmu seperti desain grafis, animasi, audio, video, dan pengembangan aplikasi multimedia. Dalam 
+                    konsentrasi ini, para ahli menggunakan perangkat lunak seperti Adobe Photoshop, Adobe Illustrator, Adobe Premiere, Adobe After
+                    Effects, Autodesk 3D Studio Max, dan sejumlah alat pengembangan perangkat lunak lainnya untuk membuat gambar, animasi, audio, dan 
+                    video. Mereka juga mengembangkan aplikasi multimedia, baik untuk desktop maupun untuk perangkat seluler. Keahlian dalam bidang 
+                    Computerized and Multimedia penting dalam mengembangkan berbagai jenis konten digital, seperti situs web interaktif, presentasi 
+                    multimedia, game, video pendidikan, dan konten pemasaran. Ahli di bidang ini harus memahami aspek-aspek seperti desain grafis, 
+                    animasi, audio, dan video serta teknologi yang diperlukan untuk menghasilkan produk yang berkualitas tinggi. Konsentrasi 
+                    Computerized and Multimedia memiliki banyak aplikasi dalam industri seperti media, hiburan, pendidikan, kesehatan, bisnis, dan 
+                    pemasaran. Semakin berkembangnya teknologi digital dan permintaan akan konten multimedia yang menarik, maka semakin banyak pula 
+                    peluang karir yang tersedia di bidang ini.</p>
+            </ul>
+        </section>
+    </div>
+    <div class="container">
+        <h2>potensi karir</h2>
+        <table border="1">
+            <tr>
+                <th>SE</th>
+                <th>IOTN</th>
+                <th>CDM</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="table-ul">
+                        <li>Web Developer</li>
+                        <li>Programer (Web, .Net & Mobile)</li>
+                        <li>Database Administrator</li>
+                        <li>System Implementor</li>
+                        <li>System Analyst & Rekayasa System</li>
+                        <li>System Testing & IT Support</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="table-ul">
+                        <li>Network Engineer</li>
+                        <li>Network Troubleshooting</li>
+                        <li>Network Administrator</li>
+                        <li>IT & Network Support</li>
+                        <li>Network Security & Analyst</li>
+                        <li>IT Maintenance Support</li>
+                        <li>IoT Specialist</li>
+                        <li>IoT Developer</li>
+                        <li>Embedded Programs Engineer</li>
+                        <li>IoT Security Engineer</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="table-ul">
+                        <li>Web Design & Multimedia Digital</li>
+                        <li>Graphic Design</li>
+                        <li>Animator & Cartoon Specialist</li>
+                        <li> Programmer Multimedia</li>
+                        <li>Photography & Video Editor</li>
+                        <li>Game 2D & 3D Specialist</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <section class="contact">
+            <h2>Kontak</h2>
+            <p>Jika Anda memiliki pertanyaan atau membutuhkan informasi lebih lanjut, jangan ragu untuk menghubungi kami:</p>
+            <p>Email:  kampus@global.ac.id</p>
+            <p>Telepon: (021) 5522727</p>
+        </section>
+        <footer>
+            <p>&copy;2024 Global Institute, Inc. All right reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

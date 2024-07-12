@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webprofile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="java/script.js" defer></script>
+    <style>
+    /* Gaya CSS Anda */
+    .reguler, .malam, .shift, .blended {
+        margin-bottom: 20px; /* Memberikan jarak antara setiap kelas */
+    }
+
+    .waktu-kuliah .class-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto 20px auto; /* Memberikan margin otomatis di kiri dan kanan serta jarak bawah */
+    background-color: white; /* Warna putih untuk kotak kelas */
+    color: black; /* Teks hitam agar kontras dengan background putih */
+    max-width: 600px; /* Lebar maksimal kotak */
+    }
+
+    /* Gaya Link Class */
+    .waktu-kuliah .class-link {
+        font-weight: bold;
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .waktu-kuliah .class-detail {
+        display: none; /* Sembunyikan detail kelas secara default */
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+
+    .waktu-kuliah .class-detail.show {
+        display: block; /* Tampilkan detail kelas ketika memiliki class 'show' */
+    }
+
+    .blue-background .class-box:hover {
+    background-color: #e0e0e0; /* Warna abu-abu saat hover */
+    }
+
+    p {
+        margin: 10px 0;
+    }
+    .waktu-kuliah{
+        background-color: #007bff; /* Warna biru */
+        color: white; /* Teks putih agar kontras dengan background biru */
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px; /* Memberikan jarak antara section */
+    }
+    </style>
+</head>
+<body>
+    <header>        
+        <h1>Institut Teknologi Dan Bisnis Bina Sarana Global</h1>
+    </header>
+    <div>
+        <nav>
+            <a href="home.html">home</a>
+            <div class="dropdown">
+            <a href="#" class="dropdown-toggle">fakultas</a>
+                <div class="dropdown-menu">
+                    <a href="TI.html">Information Engineering</a>
+                    <a href="SI.html">Information System</a>
+                    <a href="film.html">Film, Television & Media Studies</a>
+                </div>
+            </div>
+            <a href="akademik.html">Akademik</a>
+            <a href="organisasi.html">organisasi</a>
+            <a href="prestasi.html">prestasi</a>
+            <a href="gambar2.html">galeri</a>
+        </nav>
+        <div class="judul">
+            <h2>Fakulas Teknologi Informasi & Komunikasi</h2>
+        </div>
+        <div class="container">
+            <section> 
+                <h2>Program Studi</h2>
+                <div class="program-studi">
+                    <img src="gambar/gambar-TI1.webp" alt="teknik informatika" class="program-img">
+                    <div class="program-text">
+                        <h3>Information Engineering</h3>
+                        <p>
+                            Program Studi Teknik Informatika adalah sebuah program pendidikan di Global Institute 
+                            yang mempelajari tentang pengembangan, analisis, dan penggunaan teknologi informasi 
+                            dan komputer. Mahasiswa yang mengambil program studi ini akan belajar tentang dasar-dasar 
+                            teknologi informasi, pemrograman, database, jaringan komputer, keamanan informasi, 
+                            pengembangan aplikasi, desain grafis, dan topik terkait lainnya. Tujuan utama dari program 
+                            studi Teknik Informatika adalah untuk mempersiapkan lulusannya menjadi profesional di bidang 
+                            teknologi informasi, seperti pengembang perangkat lunak, administrator jaringan, arsitek solusi 
+                            teknologi, UI/UX design, atau konsultan TI. Selain itu, program ini juga bertujuan untuk memberikan 
+                            dasar pengetahuan dan keterampilan untuk memecahkan masalah dalam berbagai industri dan bidang 
+                            usaha yang bergantung pada teknologi informasi dan komputer.   
+                        </p>
+                    </div>
+                </div>
+                <div class="program-studi">
+                    <img src="gambar/gambar-SI2.webp" alt="teknik informatika" class="program-img-SI">
+                    <div class="program-text">
+                        <h3>Information System</h3>
+                        <p>
+                            Program studi sistem informasi adalah program pendidikan tinggi yang berkaitan dengan pengembangan, 
+                            penggunaan, dan manajemen sistem informasi dalam suatu organisasi. Program ini menggabungkan aspek-aspek 
+                            teknologi informasi dan bisnis, sehingga lulusan dari program studi ini memiliki kemampuan untuk memahami 
+                            dan menerapkan teknologi informasi dalam konteks bisnis. Materi kuliah dalam program studi sistem informasi 
+                            mencakup bidang-bidang seperti analisis sistem, manajemen proyek, desain basis data, keamanan informasi, 
+                            manajemen jaringan, analisis bisnis, e-commerce, dan pengembangan aplikasi. Selain itu, para mahasiswa juga 
+                            belajar tentang strategi bisnis dan manajemen, sehingga mereka memiliki pemahaman yang baik tentang bagaimana 
+                            teknologi informasi dapat diterapkan untuk mencapai tujuan bisnis.
+                        </p>
+                    </div>
+                </div>
+                <div class="program-studi">
+                    <img src="gambar/gambar-film.jpg" alt="teknik informatika" class="program-img">
+                    <div class="program-text">
+                        <h3>Film, Television & Media Studies</h3>
+                        <p>
+                            Program Studi Kajian Film, Televisi dan Media (KFTM) mempelajari berbagai aspek film, televisi, dan media 
+                            secara teoritis dan praktis. Mahasiswa akan mempelajari sejarah, estetika, produksi, dan distribusi film 
+                            dan televisi, serta berbagai aspek media lainnya seperti media sosial, media massa, dan media digital. Lulusan 
+                            KFTM diharapkan memiliki pengetahuan dan keterampilan yang luas mengenai film, televisi, dan media, serta mampu 
+                            bekerja secara profesional di industri kreatif, media, dan komunikasi. Selain itu, lulusan KFTM juga diharapkan 
+                            memiliki kemampuan berpikir kritis dan analitis dalam menganalisis dan mengkaji film, televisi, dan media.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section id="program" class="waktu-kuliah">
+                <h2>Waktu Kuliah</h2>
+                <div class="class-box reguler">
+                    <a href="#" class="class-link">Kelas reguler</a>
+                    <div class="class-detail">
+                        <p>
+                            Kelas reguler diperuntukkan bagi mahasiswa yang ingin mengikuti program 
+                            standar kampus Global Institute. Pada kelas reguler pelaksanaan kuliah setiap 
+                            hari pada pukul 08.00 s/d selesai. Perkuliahan diberikan lebih intensif, 
+                            dan diberikan pengayaan mata kuliah lebih besar, plus bimbingan karir.
+                        </p>
+                    </div>
+                </div>
+                <div class="class-box malam">
+                    <a href="#" class="class-link">Kelas malam</a>
+                    <div class="class-detail">
+                        <p>
+                            Pada kelas non reguler / kelas malam, perkuliahan dilaksanakan setiap hari 
+                            Senin hingga Jum'at. Waktu perkuliahan pada pukul 18.00 - 21.30 WIB.
+                        </p>
+                    </div>
+                </div>
+                <div class="class-box shift">
+                    <a href="#" class="class-link">Kelas SHIFT</a>
+                    <div class="class-detail">
+                        <p>
+                            Kelas Shift memiliki waktu perkuliahan lebih fleksibel karena mahasiswa 
+                            bisa berkuliah pada pagi atau malam hari. Perkuliahan dilaksanakan setiap 
+                            hari Senin hingga Jum'at, untuk kelas pagi dilaksanakan pada pukul 08.00 - 
+                            13.00 WIB, sedangkan untuk kelas malam dilaksanakan pada pukul 18.00 - 21.30 WIB.
+                        </p>
+                    </div>
+                </div>
+                <div class="class-box blended">
+                    <a href="#" class="class-link">Kelas blended learning</a>
+                    <div class="class-detail">
+                        <p>
+                            Kelas Blended Learning merupakan kombinasi antara perkuliahan online dan offline. 
+                            Mahasiswa berkesempatan untuk berdiskusi dengan rekan mahasiswa dan dosen saat 
+                            perkuliahan tatap muka, tetapi pada waktu tertentu terdapat mata kuliah yang dilakukan 
+                            secara online. Kombinasi ini tidak hanya memberikan fleksibilitas lebih, melainkan 
+                            juga kemudahan dalam belajar.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="contact">
+                <h2>Kontak</h2>
+                <p>Jika Anda memiliki pertanyaan atau membutuhkan informasi lebih lanjut, jangan ragu untuk menghubungi kami:</p>
+                <p>Email:  kampus@global.ac.id</p>
+                <p>Telepon: (021) 5522727</p>
+            </section>
+            <footer>
+                <p>&copy;2024 Global Institute, Inc. All right reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
